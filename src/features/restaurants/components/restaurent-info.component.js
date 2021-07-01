@@ -19,7 +19,7 @@ export const RestaurantInfo = ({restaurant = {}}) =>{
     return(
         <Card elevation={5} style={styles.card}>
             <Card.Cover key={name} style={styles.cover} source={{uri:photos[0]}}/>
-            <Text>{name}</Text>
+            <Text style={styles.title}>{name}</Text>
         </Card>
     );
 }
@@ -31,5 +31,8 @@ const styles = StyleSheet.create({
     cover:{
         padding:20,
         backgroundColor: 'white'
+    },
+    title:{
+        padding:16
     }
 });
